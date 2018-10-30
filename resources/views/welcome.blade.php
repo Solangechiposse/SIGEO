@@ -10,6 +10,11 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        <!-- Scrips -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery/.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -62,21 +67,18 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+             .box{
+                width:600px;
+                margin:0 auto;
+                border:1px solid #ccc;
+            }
         </style>
     </head>
+    
     <body>
+        
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     SIGEO
@@ -84,10 +86,15 @@
 
                 <div >
                     <h1>O lar da crianca Feliz...</h1>
+                    <br/><br/>
+                </div>
+                <div class="form-group">
+                    <input type="button" name="login" class=" btn btn-primary btn-lg" value="Iniciar Sessao" onclick="window.location='{{  url('login') }}'"/>
                 </div>
                 <div >
                     Coded by:
                 </div>
+
                  <div class="links">
                     <a href=>Amiel</a>
                     <a href=>Chiposse</a>
@@ -96,8 +103,8 @@
                     <a href=>Nhassengo</a>
                     <a href=>Victor</a>
                     <a href=>Saide</a>
-                    </div>
-                    </div>
+                </div>
+            </div>
            
         </div>
     </body>

@@ -75,9 +75,9 @@
             }
         </style>
     </head>
-    
+
     <body>
-        
+
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
@@ -89,10 +89,10 @@
                     <br/><br/>
                 </div>
                 <div class="form-group">
-                    <input type="button" name="login" class=" btn btn-primary btn-lg" value="Iniciar Sessao" onclick="window.location='{{  url('login') }}'"/>
+                    <input type="button" name="login" class=" btn btn-primary btn-lg" value="Iniciar Sessao" onclick="window.location='{{  url('/login') }}'"/>
                 </div>
                 <div >
-                    Coded by:
+                    Desenvolvido por:
                 </div>
 
                  <div class="links">
@@ -105,7 +105,7 @@
                     <a href=>Saide</a>
                 </div>
             </div>
-           
+
         </div>
     </body>
 </html>

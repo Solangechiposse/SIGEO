@@ -15,10 +15,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/main', 'MainController@index');
-Route::post('/main/checklogin', 'MainController@checklogin');
-Route::get('/main/successlogin', 'MainController@successlogin');
-Route::get('/main/logout', 'MainController@logout');
+Route::get('/secretaria/regDoacoes', function () {
+    return view('secretaria/regDoacoes');
+});
+
+Route::get('/secretaria/cadUser', function () {
+    return view('secretaria/cadUser');
+});
+
+Route::get('/secretaria/listaFunc', function () {
+    return view('secretaria/listaFunc');
+});
+
+Route::get('/secretaria/publicacao', function () {
+    return view('secretaria/publicacao');
+});
+
+Route::get('/servico-social/cadCrianca', function () {
+    return view('servico-social/cadCrianca');
+});
+
+Route::get('/servico-social/regAdopcoes', function () {
+    return view('servico-social/regAdopcoes');
+});
+
+Route::get('/visitante/paginaVisitante', function () {
+    return view('visitante/paginaVisitante');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

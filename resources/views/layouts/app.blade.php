@@ -1,79 +1,143 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+	<title>User Dropdown Header</title>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/demo.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/header-user-dropdown.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/footer-distributed.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+  @section('links')
+  <!-- Mais links -->
+  @show
+
+  @section('scripts')
+  <!-- Mais scripts -->
+  @show
+
+  @section('style')
+  <!-- Mais css -->
+  @show
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+
+  	$(document).ready(function(){
+
+  		var userMenu = $('.header-user-dropdown .header-user-menu');
+
+  		userMenu.on('touchend', function(e){
+
+  			userMenu.addClass('show');
+
+  			e.preventDefault();
+  			e.stopPropagation();
+
+  		});
+
+  		// This code makes the user dropdown work on mobile devices
+
+  		$(document).on('touchend', function(e){
+
+  			// If the page is touched anywhere outside the user menu, close it
+  			userMenu.removeClass('show');
+
+  		});
+
+  	});
+
+  </script>
 </head>
+
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<header class="header-user-dropdown">
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'SIGEO') }}
-                    </a>
-                </div>
+	<div class="header-limiter">
+		<h1><a href="#"><span>SIGEO</span></a></h1>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+		<nav>
+			<a href="#">Menu 1</a>
+			<a href="#">Menu 2</a>
+			<a href="#">Menu 3</a>
+		</nav>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @guest
 
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+		<div class="header-user-menu">
+      @guest
+      @else
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+            {{ Auth::user()->name }} <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                Logout
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form>
+            </li>
+          </ul>
+        </li>
+        @endguest
+		</div>
 
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+	</div>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+</header>
 
-        @yield('content')
-    </div>
+<!-- The content of the page goes here. -->
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+<div>
+   @yield('content')
+</div>
+
+<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p>SIGEO &copy; 2018</p>
+			</div>
+
+		</footer>
+
+<!-- Demo ads. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
 </body>
+
 </html>

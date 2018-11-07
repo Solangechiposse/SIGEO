@@ -39,8 +39,12 @@ Route::get('/servico-social/regAdopcoes', function () {
     return view('servico-social/regAdopcoes');
 });
 
-Route::get('/visitante/paginaVisitante', function () {
-    return view('visitante/paginaVisitante');
+Route::get('/visitante/index', function () {
+    return view('visitante/index');
+});
+
+Route::get('/visitante/visitas', function () {
+    return view('visitante/visitas');
 });
 
 Auth::routes();

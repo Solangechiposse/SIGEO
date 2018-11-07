@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>SIGEO Visitante</title>
+	<title>Pagina inicial</title>
 
   <link href="{{ asset('css/demo.css') }}" rel="stylesheet">
   <link href="{{ asset('css/header-fixed.css') }}" rel="stylesheet">
@@ -27,11 +27,11 @@
 
   		<nav>
   			<a href="#">Home</a>
-  			<a href="#" class="selected">Blog</a>
-  			<a href="#">Pricing</a>
-  			<a href="#">About</a>
-  			<a href="#">Faq</a>
-  			<a href="#">Contact</a>
+  			<a href="#" class="selected">Eventos</a>
+  			<a href="#">Visitas</a>
+  			<a href="#">Galeria</a>
+  			<a href="#">Sobre nos</a>
+  			<a href="#">Contacto</a>
   		</nav>
 
   	</div>
@@ -56,35 +56,35 @@
 				<p class="footer-links">
 					<a href="#">Home</a>
 					·
-					<a href="#">Blog</a>
+					<a href="#">Eventos</a>
 					·
-					<a href="#">Pricing</a>
+					<a href="#">Visitas</a>
 					·
-					<a href="#">About</a>
+					<a href="#">Galeria</a>
 					·
-					<a href="#">Faq</a>
+					<a href="#">Sobre nos</a>
 					·
-					<a href="#">Contact</a>
+					<a href="#">Contacto</a>
 				</p>
 
-				<p class="footer-company-name">Company Name &copy; 2015</p>
+				<p class="footer-company-name">Primeiro de Maio &copy; 2018</p>
 			</div>
 
 			<div class="footer-center">
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>21 Revolution Street</span> Paris, France</p>
+					<p><span>Av. Julius Nyerere</span> Maputi, Mocambique</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+258 84 2582019</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
+					<p><a href="mailto:support@company.com">primeirodemaio@orfanato.com</a></p>
 				</div>
 
 			</div>
@@ -92,8 +92,8 @@
 			<div class="footer-right">
 
 				<p class="footer-company-about">
-					<span>About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+					<span>Sobre o orfanato</span>
+					O Orfanato Primeiro de Maio nao descansa sem o bem garantir das criancas desamparadas. Juntos em prol de um mundo melhor!
 				</p>
 
 				<div class="footer-icons">

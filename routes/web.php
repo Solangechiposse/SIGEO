@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/app', function () {
+    return view('layouts/app');
+});
+
+Route::get('/templateVisitante', function () {
+    return view('layouts/templateVisitante');
+});
+
 Route::get('/secretaria/regDoacoes', function () {
     return view('secretaria/regDoacoes');
 });

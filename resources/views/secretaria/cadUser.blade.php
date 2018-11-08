@@ -1,74 +1,99 @@
-
-
+@extends('layouts.app')
+@section('style')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+@endsection
 @section('content')
+<div id="main" class="container-fluid">
+ <h3 class="page-header form-group col-md-12" align="center">Ficha de registo de Funcionario</h3>
+  <form action="index.html">
 
+  <!-- Dados do Funcionario-->
+  <div id="top" class="row">
+    <!-- Seccao dos dados-->
+    <section class="form-group col-md-8">
+      <div class="form-group col-md-4">
+        <label>Nome funcionario</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="text" class="form-control" id="nomeFuncionario">
+      </div>
 
-<form>
-    <h1 align="center"> Ficha de registo de Funcionario</h1>
-    <div id="top">
-        <section class="painelLeft">
-            <label>Nome funcionario</label><br/><br/>
-            <label>Data de Nascimento</label><br/><br/>
-            <label>Area de Formacao</label><br/><br/>
-            <label>Sector (ocupacao)</label><br/><br/>
-            <label>Genero:</label><br/><br/>
-            <label>Data de inicio</label><br/><br/>
-            <label>Data de Reforma</label><br/><br/>
-            <label>Proveniencia</label><br/><br/>
-        </section>
+      <div class="form-group col-md-4">
+        <label>Data de Nascimento</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="date" name="bday" min="1960-01-01" class="form-control">
+      </div>
 
-        <section class="painelCenter">
-            <input type="text" class="fieldSize"> <br/>
-            <input type="date" name="bday" min="1960-01-01" class="fieldSize"><br/>
-            <input type="text" class="fieldSize"><br/>
-            <select class="fieldSize" ><option>Nenhum</option></select><br/>
-            <input type = "radio" id= "Masc" name= "genero" /><label>Masculino<label> &nbsp&nbsp&nbsp
-            <input type = "radio" id= "Fem" name= "genero"/><label>Femenino</label> <br/><br/>
-            <input type="date" name="bday" min="1990-01-01" class="fieldSize"><br/>
-            <input type="date" name="bday" min="2000-01-01" class="fieldSize"><br/>
-            <input type="text" class="fieldSize"><br/>
-        </section>
+      <div class="form-group col-md-4">
+        <label>Area de Formacao</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="text" class="form-control">
+      </div>
 
-        <section class="painelRight">
-            <img  src="crianca.jpg" width="170"/> <br/><br/>
-            <input type = "submit" value ="Capturar" class="btn" />
-        </section>
+      <div class="form-group col-md-4">
+        <label>Sector (ocupacao)</label>
+      </div>
+      <div class="form-group col-md-8">
+        <select class="form-control" ><option>Nenhum</option></select>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label>Genero:</label>
+      </div>
+      <div class="form-group col-md-8">
+        <div class="form-group col-md-4">
+          <label>Masculino<label>
+        </div>
+        <div class="form-group col-md-2">
+          <input type = "radio" id= "Masc" name= "genero" class="form-control"/>
+        </div>
+        <div class="form-group col-md-4">
+          <label>Femenino</label>
+        </div>
+        <div class="form-group col-md-2">
+          <input type = "radio" id= "Fem" name= "genero" class="form-control"/>
+        </div>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label>Data de inicio</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="date" name="bday" min="1990-01-01" class="form-control">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label>Data de Reforma</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="date" name="bday" min="2000-01-01" class="form-control">
+      </div>
+    </section>
+
+<!-- Seccao da foto-->
+<section class="form-group col-md-4">
+  <div class="form-group col-md-12">
+    <img  src="{{ asset('img/crianca.jpg')}}" width="400" class="img-fluid"/>
+  </div>
+  <div class="form-group col-md-6">
+    <input type = "submit" value ="Capturar" class="form-control btn btn-primary" />
+  </div>
+  <div class="form-group col-md-6">
+    <input type = "submit" value ="Carregar" class="form-control btn btn-primary" />
+  </div>
+</section>
+
+</div>
+
+  <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a href="index.html" class="btn btn-default">Cancelar</a>
     </div>
-    <br/>
-
-
-    <h1 align="center">Endereco</h1>
-    <div id="bottom">
-        <section class="painelLeft">
-            <label>Email </label><br/></br>
-            <label>Bairro</label><br/></br>
-            <label>Quarteirao</label><br/></br>
-        </section>
-
-        <section class="painelCenter">
-            <input type="search"> <br/><br/>
-            <input type="text">  <br/><br/>
-            <input type="text"> <br/><br/>
-        </section>
-
-        <section class="painelLeft">
-            <label>Contacto</label><br/><br/>
-            <label>N.o Casa </label><br/><br/>
-            <label>Rua</label><br/><br/>
-        </section>
-
-        <section class="painelRight">
-            <input type="text"><br/><br/>
-            <input type="text"> <br/><br/>
-            <input type="text"> <br/><br/>
-        </section>
-    </div>
-
-    <br/>
-    <input type = "submit" value ="Gravar" class="btn btnPosition"  />
-    <input type = "reset" value ="Cancelar" class="btn" />
-
-
-
+  </div>
 </form>
+</div>
 @endsection

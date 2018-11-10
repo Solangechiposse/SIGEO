@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.templateLogin')
 <head>
 
     <meta charset="utf-8">

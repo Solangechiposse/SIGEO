@@ -23,6 +23,11 @@ Route::get('/templateVisitante', function () {
     return view('layouts/templateVisitante');
 });
 
+Route::get('/templateCRUD', function () {
+    return view('layouts/templateCRUD');
+});
+
+
 Route::get('/secretaria/regDoacoes', function () {
     return view('secretaria/regDoacoes');
 });
@@ -58,3 +63,6 @@ Route::get('/visitante/visitas', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('doacoes', 'DoacoesController');

@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 @endsection
 @section('content')
+<<<<<<< HEAD
 <div id="main" class="container-fluid">
  <h3 class="page-header form-group col-md-12" align="center">Ficha de registo de Funcionario</h3>
   <form action="index.html">
@@ -96,4 +97,7 @@
   </div>
 </form>
 </div>
+=======
+
+>>>>>>> 065e9e1a8ca4cbc3cbf8f866a87c2dcddc05f75f
 @endsection

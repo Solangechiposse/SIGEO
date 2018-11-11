@@ -16,6 +16,10 @@ header#cabecalho p{
     top:-3px;
 }
 
+h1{
+  color: #3f3f3f;
+}
+
 .menu{
     position: static;
     right: 0;

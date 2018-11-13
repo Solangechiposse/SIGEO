@@ -59,7 +59,7 @@
               </tr>
             </thead>
             <tbody>
-              @foreach($doacoes as $doacao)
+              @foreach($lista as $doacao)
               <tr>
                   <td >{{$doacao['id']}}</td>
                   <td >{{$doacao['tipoDoador']}}</td>

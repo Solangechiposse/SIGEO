@@ -10,7 +10,9 @@
                 <div class="panel-body">
                         <div class="alert alert-success">
                         </div>
-
+                        @foreach($nome as $doacao)
+                          {{ $doacao }}</br>
+                        @endforeach
                     Programar publicacao!
                 </div>
             </div>

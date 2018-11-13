@@ -60,6 +60,10 @@ Route::get('/visitante/visitas', function () {
     return view('visitante/visitas');
 });
 
+Route::get('/visitante/procuracri', function () {
+    return view('visitante/procuracri');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

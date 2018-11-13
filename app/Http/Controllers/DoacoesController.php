@@ -13,8 +13,8 @@ class DoacoesController extends Controller
   */
   public function index()
   {
-    $doacoes=\App\Doacao:all();
-     return view('/secretaria/regDoacoes')->with(['doacoes'=>$doacoes]);
+    $name=['San Juan', 'kjansfkjd', 'lkjnalksmf'];
+     return view('/secretaria/publicacao')->with(['nome'=>$name]);
  }
 
  /**

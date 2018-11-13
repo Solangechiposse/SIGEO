@@ -66,3 +66,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('doacoes', 'DoacoesController');
+Route::resource('publicacao', 'publicacaoController');

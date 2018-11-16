@@ -84,7 +84,7 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">primeirodemaio@orfanato.com</a></p>
+					<p><a href="betolas:support@company.com">primeirodemaio@orfanato.com</a></p>
 				</div>
 
 			</div>

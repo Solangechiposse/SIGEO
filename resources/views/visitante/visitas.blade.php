@@ -1,53 +1,123 @@
 @extends('layouts.app')
+@section('style')
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+@endsection
+
+@section('script')
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+@endsection
 
 @section('content')
-    <div class="conteudo">
-        <br/><br/>
-            <h2 style="margin-left: 20px;">Marcação de visitas</h2><br/>
-            <p style="margin-left: 20px;font-size: 13pt;">
-                O orfanato primeiro de maio está aberto para visitas. Se você é um dos interessados em visitar as nossas instalações
-                para conhecer nossas alegres crianças, basta preencher o formulário abaixo de reserva de data para visita.</p>
-            <br/><br/>
 
-        <form name="visita">
-            <div style="width: 420px;height: 400px; border: 1px solid #ccc;margin-left: 20px;margin-right: auto;padding: 20px; " id="top2">
-            
-                <label>Nome do visitante</label><br/>
-                  <input type="text" id="nome" name="nome" class="fieldSize"><br/>
+    <div id="main" class="container-fluid">
+        <h3 class="page-header form-group col-md-12" align="center">Ficha de Marcacao de Visitas</h3>
+         <form action="">
+            <!-- Dados do Funcionario-->
+            <div id="top" class="row">
+                <!-- Seccao dos dados-->
+                <section class="form-group col-md-8">
+                    <div class="form-group col-md-4 my-labels">
+                        <label>Nome do visitante</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="nomeFuncionario">
+                    </div>
 
-                <label>Email</label><br/>
-                 <input type="email" id="nome" name="nome" class="fieldSize"><br/>
+                    <div class="form-group col-md-4 my-labels">
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" name="bday" placeholder="betolas3@example.com" class="form-control">
+                    </div>
 
-                <label>Local da visita</label><br/>
-                <select class="fieldSize">
-                   <option>Nenhum</option>
-                   <option>Instalacoes</option>
-                   <option>Dormitorio</option>
-                   <option>Patio</option><br/>
-                </select><br/>
-                <label>Data da visita</label><br/>
-                <input type="text" id="calendario" class="fieldSize"/><br/>
+                    <div class="form-group col-md-4 my-labels">
+                        <label>Area da visita</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                         <select class="form-control">
+                            <option>Nenhum</option>
+                            <option>Instalacoes</option>
+                            <option>Dormitorio</option>
+                             <option>Patio</option><br/>
+                        </select>
+                    </div>
 
-                <label>Assunto</label><br/><br/>
-                <textarea placeholder="Digite o assunto aqui"></textarea>
-           
-              
+                    
+                    <div class="form-group col-md-4 my-labels">
+                        <label>Data</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" name="bday" min="2010-01-01" class="form-control">
+                       
+                    </div>
+
+                    <div class="form-group col-md-4 my-labels">
+                        <label>Assunto</label>
+                    </div>
+                    <div class="form-group col-md-6 ">
+
+                        <textarea cols="62" rows="5" placeholder="Deixe ficar o assunto aqui..."></textarea>
+                    </div>
+
+                   
+                   
                
-              
-
-
-              
-                
 
             </div>
-            <br/><br/>
+                 <div id="actions" class=""  style="margin-left: 44%">
+                    <div class="">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <a href="" class="btn btn-default">Cancelar</a>
+                    </div>
+                 </div>
+            </form>
+            </div>
 
-            <input type="submit" value="Submeter pedido" class="btn" style=" padding:5px; margin-left: 20px">
 
 
-            <br/><br/>
 
-        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
         <br/>
         <p style="text-align: justify; padding-left: 5px; width: 250px; float:right">
         <b style="font-size: 20px">Localização:</b><br/> <br/>

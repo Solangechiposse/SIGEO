@@ -59,7 +59,9 @@ Route::get('/visitante/index', function () {
 Route::get('/visitante/visitas', function () {
     return view('visitante/visitas');
 });
-
+Route::get('/secretaria/visitas', function () {
+    return view('secretaria/regVisitas');
+});
 Route::get('/visitante/procuracri', function () {
     return view('visitante/procuracri');
 });

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Http\Requests;
+use App\Http\Controllers\Controller;
+use DB;
 class DoacoesController extends Controller
 {
   /**
@@ -13,10 +15,9 @@ class DoacoesController extends Controller
   */
   public function index()
   {
-    $name=['San Juan', 'kjansfkjd', 'lkjnalksmf'];
-     return view('/secretaria/publicacao')->with(['nome'=>$name]);
- }
-
+    $data['data']=DB::table('doacaos')->get();
+     return view('/secretaria/regDoacoes', $data);
+   }
  /**
   * Show the form for creating a new resource.
   *

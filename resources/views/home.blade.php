@@ -5,7 +5,7 @@
 
  <div class="conteudo">
 
-    
+
      <h1 style="margin-left: 20px; ">Sobre nos</h1><br/>
 
      <p align="justify" style="margin-left: 20px; margin-right: 40px" class="specialP">
@@ -82,8 +82,6 @@
 
 
 </div>
-
-<?php include_once("footer.php");?>
 
 
 

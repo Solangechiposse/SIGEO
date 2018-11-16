@@ -66,6 +66,10 @@ Route::get('/visitante/procuracri', function () {
     return view('visitante/procuracri');
 });
 
+Route::get('/secretaria/visitas', function () {
+    return view('secretaria/regVisitas');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -73,3 +77,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('doacoes', 'DoacoesController');
 Route::resource('publicacao', 'publicacaoController');
+

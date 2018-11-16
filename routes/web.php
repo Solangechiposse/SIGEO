@@ -60,6 +60,10 @@ Route::get('/visitante/visitas', function () {
     return view('visitante/visitas');
 });
 
+Route::get('/secretaria/visitas', function () {
+    return view('secretaria/regVisitas');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

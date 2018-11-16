@@ -3,11 +3,21 @@
 @section('style')
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 @endsection
+
+@section('scripts')
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+
+</script>
+@show
+
 @section('content')
 <div id="main" class="container-fluid">
  <h3 class="page-header form-group col-md-4" align="center">Registo de Doacao</h3>
  <h3 class="page-header form-group col-md-8" align="center">Doacoes Realizadas</h3>
-  <form method="post" action="{{ url('doacoes') }}" enctype="multipart/form-data">
+  <form id="formDoacao" method="post" action="{{ url('doacoes') }}" enctype="multipart/form-data">
     {{ csrf_field() }}
   <!-- area de campos do form -->
   <div class="row">
@@ -56,17 +66,26 @@
                   <th class="titulo">Quantidade</th>
                   <th class="titulo">Data</th>
                   <th class="titulo">Descricao</th>
+                    <th class="titulo">Accao</th>
               </tr>
             </thead>
             <tbody>
-              @foreach($lista as $doacao)
+              @foreach($data as $value)
               <tr>
-                  <td >{{$doacao['id']}}</td>
-                  <td >{{$doacao['tipoDoador']}}</td>
-                  <td >{{$doacao['tipoDoacao']}}</td>
-                  <td >{{$doacao['quantidade']}}</td>
-                  <td >{{$doacao['descricao']}}</td>
-                  <td >{{$doacao['created_at']}}</td>
+                  <td >{{ $value->id }}</td>
+                  <td >{{ $value->tipoDoador }}</td>
+                  <td >{{ $value->tipoDoacao }}</td>
+                  <td >{{ $value->quantidade }}</td>
+                  <td >{{ $value->descricao }}</td>
+                  <td >{{ $value->created_at }}</td>
+                  <td >
+                    <div id="actions" class="row">
+                      <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                        <button type="submit" class="btn btn-danger">Eliminar</a>
+                      </div>
+                    </div>
+                  </td>
               </tr>
               @endforeach
             </tbody>

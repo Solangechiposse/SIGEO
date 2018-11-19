@@ -1,8 +1,9 @@
 @extends('layouts.app')
-
-@section('style')
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-@endsection
+
+<style>
+
+</style>
 
 @section('scripts')
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
@@ -15,14 +16,13 @@
 
 @section('content')
 <div id="main" class="container-fluid">
- <h3 class="page-header form-group col-md-4" align="center">Registo de Doacao</h3>
- <h3 class="page-header form-group col-md-8" align="center">Doacoes Realizadas</h3>
+ <h3 class="page-header form-group col-md-12" align="center">Registo de Doacao</h3>
   <form id="formDoacao" method="post" action="{{ url('doacoes') }}" enctype="multipart/form-data">
     {{ csrf_field() }}
   <!-- area de campos do form -->
   <div class="row">
     <!-- Seccao dos dados-->
-    <section class="form-group col-md-4">
+    <section class="form-group col-md-12">
 
       <div class="form-group col-md-4">
         <label>Tipo Doador</label>
@@ -52,55 +52,14 @@
         <textarea cols="26" rows="5" class="form-control" name="descricao" id="descricao"></textarea>
       </div>
     </section>
-
-<!-- Seccao da tabela-->
-<section class="form-group col-md-8">
-    <div class="panel panel-default">
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover table-striped">
-            <thead>
-              <tr >
-                  <th class="titulo">ID</th>
-                  <th class="titulo">Tipo Doador</th>
-                  <th class="titulo">Tipo Doacao</th>
-                  <th class="titulo">Quantidade</th>
-                  <th class="titulo">Data</th>
-                  <th class="titulo">Descricao</th>
-                    <th class="titulo">Accao</th>
-              </tr>
-            </thead>
-            <tbody>
-              @foreach($data as $value)
-              <tr>
-                  <td >{{ $value->id }}</td>
-                  <td >{{ $value->tipoDoador }}</td>
-                  <td >{{ $value->tipoDoacao }}</td>
-                  <td >{{ $value->quantidade }}</td>
-                  <td >{{ $value->descricao }}</td>
-                  <td >{{ $value->created_at }}</td>
-                  <td >
-                    <div id="actions" class="row">
-                      <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Editar</button>
-                        <button type="submit" class="btn btn-danger">Eliminar</a>
-                      </div>
-                    </div>
-                  </td>
-              </tr>
-              @endforeach
-            </tbody>
-        </table>
-      </div>
-    </div>
-</section>
-
 </div>
 
   <hr />
   <div id="actions" class="row">
     <div class="col-md-12">
-      <button type="submit" class="btn btn-primary">Salvar</button>
-      <a href="" class="btn btn-default">Cancelar</a>
+      <a href="{{ url('doacoes') }}" class="btn btn-primary"  align="left">Ver Lista</a>
+      <button type="submit" class="btn btn-primary" align="right">Salvar</button>
+      <a href="" class="btn btn-default" align="right">Cancelar</a>
     </div>
   </div>
 </form>

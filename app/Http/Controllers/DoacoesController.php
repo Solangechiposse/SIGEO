@@ -16,16 +16,31 @@ class DoacoesController extends Controller
   public function index()
   {
     $data['data']=DB::table('doacaos')->get();
-     return view('/secretaria/regDoacoes', $data);
+     return view('/secretaria/listaDoacoes', $data);
    }
  /**
   * Show the form for creating a new resource.
   *
   * @return Response
   */
- public function create()
- {
+
+  public function create()
+  {
      return view('/secretaria/regDoacoes');
+  }
+
+ public function edit($id)
+ {
+   $doacao=DB::find($id);
+    return view('/secretaria/regDoacoes', compact('doacao'));
+ }
+
+ public function delete()
+ {
+   $doacao=DB::find($id);
+   $doacao->delete();
+   $data['data']=DB::table('doacaos')->get();
+   return view('/secretaria/regDoacoes', $data);
  }
 
  /**

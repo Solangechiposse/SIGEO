@@ -32,6 +32,10 @@ Route::get('/secretaria/regDoacoes', function () {
     return view('secretaria/regDoacoes');
 });
 
+Route::get('/secretaria/listaDoacoes', function () {
+    return view('secretaria/listaDoacoes');
+});
+
 Route::get('/secretaria/cadUser', function () {
     return view('secretaria/cadUser');
 });
@@ -76,5 +80,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('doacoes', 'DoacoesController');
+Route::get('/doacoes.create', 'DoacoesController@create')->name('doacoes.create');
+Route::get('/doacoes.edit', 'DoacoesController@edit')->name('doacoes.edit');
+Route::get('/doacoes.delete', 'DoacoesController@delete')->name('doacoes.delete');
 Route::resource('publicacao', 'publicacaoController');
-

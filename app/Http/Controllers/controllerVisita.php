@@ -25,7 +25,7 @@ class controllerVisita extends Controller
  }
 
  /**
-  * Store a newly created resource in storage.
+  * Store do cadastro dos visitantes.
   *
   * @return Response
   */

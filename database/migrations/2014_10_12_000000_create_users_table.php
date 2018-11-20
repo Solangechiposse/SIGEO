@@ -25,9 +25,9 @@ class CreateUsersTable extends Migration
             $table->date('data-de-nascimento');
             $table->date('data-de-inicio');
             $table->date ('data-de-reforma');
-            $table-> string('ocupacao');
+            $table->string('ocupacao');
             $table->string('genero');
-            $table->number('contacto')->unique();
+            $table->integer('contacto')->unique();
 
 
             $table->rememberToken();

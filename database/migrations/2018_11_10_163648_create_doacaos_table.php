@@ -17,7 +17,7 @@ class CreateDoacaosTable extends Migration
           $table->increments('id');
           $table->string('tipoDoador', 15);
           $table->string('tipoDoacao', 15);
-          $table->decimal('quantidade', 10);
+          $table->string('quantidade', 10);
           $table->text('descricao') ->nullable();
           $table->timestamps();
           $table->softDeletes();

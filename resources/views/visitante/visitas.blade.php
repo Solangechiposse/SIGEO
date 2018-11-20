@@ -14,54 +14,56 @@
 
     <div id="main" class="container-fluid">
         <h3 class="page-header form-group col-md-12" align="center">Ficha de Marcacao de Visitas</h3>
-         <form action="">
+         <form method="POST" action="{{url('visitas')}}">
+         {{ csrf_field() }}
+         <h1>{{Session::get('success')}}</h1>
             <!-- Dados do Funcionario-->
             <div id="top" class="row">
                 <!-- Seccao dos dados-->
-                <section class="form-group col-md-8">
-                    <div class="form-group col-md-4 my-labels">
-                        <label>Nome do visitante</label>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="nomeFuncionario">
-                    </div>
+                <section class="form-group col-md-5">
 
-                    <div class="form-group col-md-4 my-labels">
-                        <label>Email</label>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input type="email" name="bday" placeholder="betolas3@example.com" class="form-control">
-                    </div>
+      <div class="form-group col-md-4">
+        <label>Nome do Visitante</label>
+      </div>
+      <div class="form-group col-md-8">
+          <input type="text" class="form-control" name="nomeVisitante" id="nomeVisitante">
+      </div>
 
-                    <div class="form-group col-md-4 my-labels">
-                        <label>Area da visita</label>
-                    </div>
-                    <div class="form-group col-md-6">
-                         <select class="form-control">
-                            <option>Nenhum</option>
-                            <option>Instalacoes</option>
-                            <option>Dormitorio</option>
-                             <option>Patio</option><br/>
-                        </select>
-                    </div>
+      <div class="form-group col-md-4">
+        <label>Tipo de Documento</label>
+      </div>
+      <div class="form-group col-md-8">
+        <select class="form-control" name="tipoDocumento" id="tipoDocumento"><option>Bilhete de Identidade</option></select>
+      </div>
 
-                    
-                    <div class="form-group col-md-4 my-labels">
-                        <label>Data</label>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input type="date" name="bday" min="2010-01-01" class="form-control">
-                       
-                    </div>
+      <div class="form-group col-md-4">
+        <label>No. Documento</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="text" class="form-control" name="nrDoc" id="nrDoc">
+      </div>
 
-                    <div class="form-group col-md-4 my-labels">
-                        <label>Assunto</label>
-                    </div>
-                    <div class="form-group col-md-6 ">
+      <div class="form-group col-md-4">
+        <label>Data da Visita</label>
+      </div>
+      <div class="form-group col-md-8">
+        <input type="date" min="2014-01-01" class="form-control" name="bday" id="bday">
+      </div>
 
-                        <textarea cols="62" rows="5" placeholder="Deixe ficar o assunto aqui..."></textarea>
-                    </div>
+      <div class="form-group col-md-4">
+        <label>Local da Visita</label>
+      </div>
+      <div class="form-group col-md-8">
+        <select class="form-control" name="local" id="local"><option>Nenhum</option></select>
+      </div>
 
+      <div class="form-group col-md-4">
+        <label>Assunto</label>
+      </div>
+      <div class="form-group col-md-8">
+          <textarea cols="26" rows="5" class="form-control" placeholder="Deixe ficar o assunto aqui" name="assunto" id="assunto"></textarea>
+      </div>
+    </section>
                    
                    
                

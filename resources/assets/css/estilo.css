@@ -1,4 +1,87 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*CONTACTO*/
+#contacto{
+	float: left;
+	width:77%;
+	margin-top: 5px;
+}
+
+#contacto .info-contacto{
+	font-size: 35px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000069;
+	padding: 5px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+#contacto form{
+	float: left;
+	width: 60%;
+	padding: 5PX;
+	margin-left: 3%;
+}
+
+#contacto fieldset{
+	font-size: 1.5em;
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	padding: 5px;
+}
+
+#contacto label{
+	display: block;
+}
+
+#contacto span{
+	font-size: 1.2em;
+	padding: 5px;
+	display: block;
+
+}
+
+#contacto input{
+	width: 450px;
+	font-size: 1.2em;
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	padding: 5px;
+}
+
+#contacto select{
+	font-size: 0.6em;
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+#contacto textarea{
+	width: 450px;
+	font-size: 1.2em;
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	padding: 5px;
+}
+
+#contacto .btn-env{
+	float: left;
+	width: 100px;
+	font-size: 1.2em;
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	padding: 5px;
+	cursor: pointer;
+	margin-top: 2%;
+}
 
 
 
@@ -15,9 +98,6 @@ h1{
      width: 45%;
  }
 
-.painelLeft2{
-    float: left;
-}
 
 .painelCenter{
     float: left;
@@ -25,11 +105,7 @@ h1{
     margin-left: 40px;
 }
 
-.painelCenter2{
-    float: left;
-    width: 300px;
-    margin-left: 10px;
-}
+
 
 .painelRight{
     float: left;
@@ -55,38 +131,9 @@ label{
     width: 440px;
 }
 
-div#top{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 320px;
-    width: 700px;
-}
-
-div#top2{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 350px;
-    width: 940px;
-}
 
 
 
-
-
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
 
 
 .conteudo{
@@ -109,14 +156,6 @@ div#top2{
     margin-right: 20px;
 
 
-}
-
-.procuraContent{
-    width: 400px;
-    float: left;
-    border: inset;
-    padding: 10px;
-    margin-left: 3px;
 }
 
 
@@ -152,3 +191,7 @@ div#top2{
 
     margin-left: 10px;
 }
+
+
+
+

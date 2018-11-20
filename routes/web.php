@@ -70,6 +70,18 @@ Route::get('/visitante/procuracri', function () {
     return view('visitante/procuracri');
 });
 
+Route::get('/visitante/slider', function () {
+    return view('visitante/slider');
+});
+
+Route::get('/visitante/galeria', function () {
+    return view('visitante/galeria');
+});
+
+Route::get('/visitante/contacto', function () {
+    return view('visitante/contacto');
+});
+
 Route::get('/secretaria/visitas', function () {
     return view('secretaria/regVisitas');
 });
@@ -84,3 +96,6 @@ Route::get('/doacoes.create', 'DoacoesController@create')->name('doacoes.create'
 Route::get('/doacoes.edit', 'DoacoesController@edit')->name('doacoes.edit');
 Route::get('/doacoes.delete', 'DoacoesController@delete')->name('doacoes.delete');
 Route::resource('publicacao', 'publicacaoController');
+
+Route::resource('visitas', 'controllerVisita');
+//Route::post('/visitas.salvarVisitas', 'controllerVisita@salvarVisitas')->name('visitas.salvarVisitas');

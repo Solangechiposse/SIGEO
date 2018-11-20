@@ -13,7 +13,7 @@ class CreateVisitasTable extends Migration
      */
     public function up()
     {
-        Schema::create('_visitas', function (Blueprint $table) {
+        Schema::create('visitas', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nomeVisitante');
@@ -34,6 +34,6 @@ class CreateVisitasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_visitas');
+        Schema::dropIfExists('visitas');
     }
 }

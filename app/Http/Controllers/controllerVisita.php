@@ -12,7 +12,7 @@ class controllerVisita extends Controller
     public function index()
   {
     $data['data']=DB::table('visitas')->get();
-     return view('/secretaria/regVisitas', $data);
+     return view('/visitante/visitas', $data);
    }
  /**
   * Show the form for creating a new resource.
@@ -39,8 +39,24 @@ class controllerVisita extends Controller
    $visita->bday=$request->get('bday');
    $visita->local=$request->get('local');
    $visita->assunto=$request->get('assunto');
-   $doacao->save();
+   $visita->save();
 
       return redirect('visitas')->with('success', 'Information has been added');
+ }
+
+
+ public function salvarVisitas(Request $request)
+ {
+  $visita= new \App\visita;
+  $visita->id=$request->get('id');
+  $visita->nomeVisitante=$request->get('nomeVisitante');
+  $visita->tipoDocumento=$request->get('tipoDocumento');
+  $visita->nrDoc=$request->get('nrDoc');
+  $visita->bday=$request->get('bday');
+  $visita->local=$request->get('local');
+  $visita->assunto=$request->get('assunto');
+  $doacao->save();
+
+     return redirect('/visitante/visitas')->with('success', 'Visita marcada com sucesso');
  }
 }

@@ -12,6 +12,7 @@
   <link href="{{ asset('css/demo.css') }}" rel="stylesheet">
   <link href="{{ asset('css/header-fixed.css') }}" rel="stylesheet">
   <link href="{{ asset('css/footer-distributed-with-address-and-phones.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/footer-distributed.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -37,15 +38,15 @@
 
   	<div class="header-limiter">
 
-  		<h1><a href="#">Company<span>logo</span></a></h1>
+  		<h1><a href="#">Orfanto<span>Primeio De Maio</span></a></h1>
 
   		<nav>
-  			<a href="#">Home</a>
-  			<a href="#" class="selected">Eventos</a>
-  			<a href="#">Visitas</a>
-  			<a href="#">Galeria</a>
+  			<a href="index">Home</a>
+  			<a href="eventos" classselected="">Eventos</a>
+  			<a href="visitas">Visitas</a>
+  			<a href="galeria">Galeria</a>
   			<a href="#">Sobre nos</a>
-  			<a href="#">Contacto</a>
+  			<a href="contacto">Contacto</a>
   		</nav>
 
   	</div>
@@ -115,7 +116,7 @@
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/Solangechiposse/SIGEO"><i class="fa fa-github"></i></a>
 
 				</div>
 

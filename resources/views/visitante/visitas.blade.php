@@ -12,15 +12,17 @@
 
 @section('content')
 
-    <div id="main" class="container-fluid">
+    <div id="main" class="container-fluid"  style="font-size:18px; font-family: Arial, Helvetica, sans-serif;">
         <h3 class="page-header form-group col-md-12" align="center">Ficha de Marcacao de Visitas</h3>
          <form method="POST" action="{{url('visitas')}}">
          {{ csrf_field() }}
-         <h1>{{Session::get('success')}}</h1>
+         <i><h5>{{Session::get('success')}}</h5></i>
             <!-- Dados do Funcionario-->
             <div id="top" class="row">
                 <!-- Seccao dos dados-->
-                <section class="form-group col-md-5">
+      <section class="form-group col-md-2">
+      </section>
+      <section class="form-group col-md-8">
 
       <div class="form-group col-md-4">
         <label>Nome do Visitante</label>
@@ -69,10 +71,10 @@
                
 
             </div>
-                 <div id="actions" class=""  style="margin-left: 44%">
+                 <div id="actions" class=""  style="margin-left: 76%">
                     <div class="">
-                        <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="" class="btn btn-default">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Submeter</button>
+                        
                     </div>
                  </div>
             </form>
@@ -81,46 +83,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
-        <br/>
+        <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
         <p style="text-align: justify; padding-left: 5px; width: 250px; float:right">
         <b style="font-size: 20px">Localização:</b><br/> <br/>
         <b>Província:</b> Maputo<br/>

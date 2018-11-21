@@ -21,7 +21,6 @@
 
     <title>Pagina inicial</title>
 
- 
 </head>
 
 
@@ -29,7 +28,7 @@
 @section('content')
 
 
-<div class="conteudo">
+<div class="">
 
 @include('visitante.slider')
 
@@ -38,9 +37,9 @@
 
 
 
- <h1 style="margin-left: 20px; ">Sobre nos</h1><br/>
+ <h1 style="margin-left: 200px; ">Sobre nos</h1><br/>
 
- <p align="justify" style="margin-left: 20px; margin-right: 40px" class="specialP">
+ <p style=" font-size:18px; font-family: Arial, Helvetica, sans-serif;; margin-left:200px; margin-right:200px; text-align:justify;">
 
      Um dia sozinho é que nem um dia sozinho. O solitarismo absorto não faz bem à alma nenhuma, não faz mesmo! Não
      se deve procurar a causa da coisa pois, mais vale achar achar solução do que identificar problema... Com toda
@@ -63,52 +62,18 @@
      A voz das minhas entranhas nega a se calar, não consigo contê-la e sei porquê!</p><br/>
 
 
- <div >
+ 
 
      <br/>
-        <h2 style="margin-left: 20px";>Quer contribuir para ajudar nossas crianças e não sabe como?</h2><br/>
-     <p class="specialP">
+        <h2 style="margin-left: 200px";>Quer contribuir para ajudar nossas crianças e não sabe como?</h2><br/>
+     <p style="font-size:18px; font-family: Arial, Helvetica, sans-serif;; margin-left:200px; margin-right:200px; text-align:justify;">
          É Facil! Para oferecer ajuda ao Orfanato Primeiro de Maio, pode fazê-lo por meio de doações que podem ser monetárias ou
          materiais(no prório orfanato).  Lembre-se, qualquer gesto ou ajuda sua pode garantir o sorriso de uma criança.
-         Para fazer doação monetária, preencha o formulario abaixo:
-         <br/>
-         <br/>
+         Para fazer doação monetária, <a href="#">clique aqui</a>
+    </p>
 
-    <form>
-        <div style=" ; height: 300px; border: 1px solid #ccc;
-             margin-left: 20px;
-             margin-right: auto;
-             padding: 20px;
-             height: 200px;
-             width: 420px;">
+    
 
-            <section class="painelRight">
-                <label>Nome do Doador</label><br/><br/>
-                <label>Email</label><br/><br/>
-                <label>Tipo doador</label><br/><br/>
-                <label>No. da conta</label><br/><br/>
-                <label>Valor monetario</label><br/><br/>
-            </section>
-
-            <section class="painelRight">
-                <input type="text" id="nome" class="fieldSize"><br/>
-                <input type="email" id="nome" name="nome" class="fieldSize"><br/>
-                <select id="'tipodoador" class="fieldSize">
-                    <option>tipo doador</option>
-                    <option>singualr</option>
-                    <option>companhia</option>
-                </select><br/>
-                <input type="text" id="num_conta" class="fieldSize"/><br/>
-            <input type="text" id="valor" class="fieldSize" /><br/>
-            </section>
-
-        </div>
-         <br/>
-         <input type="submit" value="Fazer doacao" class="btn" style=" padding:5px; margin-left: 330px">
-     </form>
-     <br/> <br/> <br/>
-
-</div>
 
 
 

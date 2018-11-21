@@ -38,14 +38,14 @@
 
   	<div class="header-limiter">
 
-  		<h1><a href="#">Orfanto<span>Primeio De Maio</span></a></h1>
+  		<h1><a href="index">Orfanato<span>Primeiro De Maio</span></a></h1>
 
   		<nav>
   			<a href="index">Home</a>
-  			<a href="eventos" classselected="">Eventos</a>
+  			<a href="eventos" >Eventos</a>
   			<a href="visitas">Visitas</a>
   			<a href="galeria">Galeria</a>
-  			<a href="#">Sobre nos</a>
+  			<a href="procura">Procura-se</a>
   			<a href="contacto">Contacto</a>
   		</nav>
 
@@ -69,17 +69,17 @@
 				<h3>Company<span>logo</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="index">Home</a>
 					·
-					<a href="#">Eventos</a>
+					<a href="eventos">Eventos</a>
 					·
-					<a href="#">Visitas</a>
+					<a href="visitas">Visitas</a>
 					·
-					<a href="#">Galeria</a>
+					<a href="galeria">Galeria</a>
 					·
 					<a href="#">Sobre nos</a>
 					·
-					<a href="#">Contacto</a>
+					<a href="contacto">Contacto</a>
 				</p>
 
 				<p class="footer-company-name">Primeiro de Maio &copy; 2018</p>

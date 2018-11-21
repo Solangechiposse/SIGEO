@@ -23,6 +23,7 @@
         <input checked="checked" id="carousel-3" name="carousel[]" type="radio">
         <input id="carousel-4" name="carousel[]" type="radio">
         <input id="carousel-5" name="carousel[]" type="radio">
+        
         <ul class="carousel__items">
             <li class="carousel__item"><img src="{{ asset('img/img10.jpg')}}" alt=""></li>
             <li class="carousel__item"><img src="{{ asset('img/img7.jpg')}}" alt=""></li>

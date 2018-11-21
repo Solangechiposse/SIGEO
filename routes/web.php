@@ -82,6 +82,18 @@ Route::get('/visitante/contacto', function () {
     return view('visitante/contacto');
 });
 
+Route::get('/visitante/politica', function () {
+    return view('visitante/politica');
+});
+
+Route::get('/visitante/eventos', function () {
+    return view('visitante/eventos');
+});
+
+Route::get('/visitante/procura', function () {
+    return view('visitante/procura');
+});
+
 Route::get('/secretaria/visitas', function () {
     return view('secretaria/regVisitas');
 });
@@ -98,4 +110,5 @@ Route::get('/doacoes.delete', 'DoacoesController@delete')->name('doacoes.delete'
 Route::resource('publicacao', 'publicacaoController');
 
 Route::resource('visitas', 'controllerVisita');
+Route::resource('contacto', 'contactoController');
 //Route::post('/visitas.salvarVisitas', 'controllerVisita@salvarVisitas')->name('visitas.salvarVisitas');

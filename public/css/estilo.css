@@ -1,138 +1,37 @@
-header#cabecalho{
-    border-bottom: 1px #606060 solid;
-    color: #ffffff;
-    border-top: 1px solid #000000;
-    background: #3f3f3f;
-    padding: 20px 0 50px;
-    height: 100px;
-    margin-bottom: 30px;
 
-    width: 100%;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+   background: #234;
 }
 
-header#cabecalho p{
-    position: absolute;
-    right: 50px;
-    top:-3px;
-}
-
-h1{
-  color: #3f3f3f;
-}
-
-.menu{
-    position: static;
-    right: 0;
-    top: 5%;
-    width: 80em;
-    margin-top: -4.5em;
+.conteudo{
+    height: auto;
+    
+   
+    background: #ffffff;
+    
 }
 
 
-nav#menu{
-    display:block;
-
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    color: #00aeef;
-
-}
-
-
-nav#menu ul{
-    text-transform: uppercase;
-    position:absolute;
-    top: 40px;
-    left: 300px;
-}
-
-#menu li a:hover{
-    color:#333;
-    display:inline;
-    color:#fff;
-}
-
-nav#menu li{
-    display: inline;
-    color: #00aeef;
-    background-color: #eae7e7;
+.procuraContent{
+    width: 33%;
+    float: left;
+    border: inset;
     padding: 10px;
-    margin:2px;
-    transition: background-color 1s;
-    position: relative;
-    border-right:1px solid #c0c0c0;
-
+    margin-left: 3px;
 }
 
-nav#menu li:hover{
-    background-color:#606060;
-}
-
-nav#menu h1{
-    display:none;
-}
-
-nav#menu a:hover{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/*submenu edicao*/
-#menu li  ul{
-    position:absolute;
-    top:35px;
-    left:-5px;
-    display:none;
-
+.foto {
+    width: 250px;
+    height: 250px;
+    box-shadow: 3px 5px 3px rgba(0,0,0,.4);
 }
 
 
-#menu li:hover ul, #menu li.over ul{display:block;
-    text-decoration:none;}
-
-#menu li ul li{
-    top:10px;
-    border:1px solid #c0c0c0;
-    display:block;
-    width:180px;
-
-
-}
-
-.painelLeft{
-     float: left;
-     width: 45%;
- }
-
-.painelLeft2{
-    float: left;
-}
-
-.painelCenter{
-    float: left;
-    width: 45%;
-    margin-left: 40px;
-}
-
-.painelCenter2{
-    float: left;
-    width: 300px;
-    margin-left: 10px;
-}
-
-.painelRight{
-    float: left;
-    margin-left: 10px;
-}
-
-label{
-    color: rgb(0,75,150);
-}
 
 .fieldSize{
     width: 200px;
@@ -149,84 +48,16 @@ label{
     width: 440px;
 }
 
-div#top{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 320px;
-    width: 700px;
-}
-
-div#top2{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 350px;
-    width: 940px;
-}
 
 
 
 
-div#bottom{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 120px;
-    width: 700px;
-}
-
-div#bottom2{
-    border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    height: 260px;
-    width: 940px;
-}
 
 
-/*footer {
-    color: #ffffff;
-    border-top: 1px solid #000000;
-    background: #333333;
-    padding: 20px 0 50px;
-    position: relative;
-    height:100px;
-    margin-top: 80px;
-}*/
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-   background: #ccc;
-}
-#topo {
-    width: 100%;
-    height: 150px;
-    background: #555;
-}
-.conteudo{
-    margin-left: 20px;
-    margin-right: 20px;
-    height: auto;
-    background: #fcfcfc;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-#rodape {
-    width: 100%;
-    height: 100px;
-    background: #555;
-    bottom: 0px;
-}
+
 
 
 .specialP{
@@ -239,50 +70,7 @@ body {
 
 }
 
-.procuraContent{
-    width: 400px;
-    float: left;
-    border: inset;
-    padding: 10px;
-    margin-left: 3px;
-}
-
-/*formatacao imagem*/
-
-.foto {
-    width: 200px;
-    height: 200px;
-    box-shadow: 3px 5px 3px rgba(0,0,0,.4);
-}
 
 
-.btn{
 
-    position: relative;
-    background: rgb(254,231,154);
-    background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
-    background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
-    background: -o-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
-    background: linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee79a', endColorstr='#fec151',GradientType=0 );
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-    -ms-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-    -o-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-    box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-    border: 1px solid #D69E31;
-    color: #85592e;
-    cursor: pointer;
-    float:left;
-    font: bold 15px Helvetica, Arial, sans-serif;
-    height: 35px;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 
-    margin-left: 10px;
-}

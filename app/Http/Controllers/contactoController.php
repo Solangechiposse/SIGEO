@@ -11,7 +11,7 @@ class contactoController extends Controller
 {
     public function index()
   {
-    $data['data']=DB::table('visitas')->get();
+    $data['data']=DB::table('contactos')->get();
      return view('/visitante/contacto', $data);
    }
  /**

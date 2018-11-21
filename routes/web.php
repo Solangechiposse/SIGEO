@@ -90,6 +90,10 @@ Route::get('/visitante/eventos', function () {
     return view('visitante/eventos');
 });
 
+Route::get('/visitante/donativos', function () {
+    return view('visitante/donativos');
+});
+
 Route::get('/visitante/procura', function () {
     return view('visitante/procura');
 });
@@ -111,4 +115,5 @@ Route::resource('publicacao', 'publicacaoController');
 
 Route::resource('visitas', 'controllerVisita');
 Route::resource('contacto', 'contactoController');
+Route::resource('donativos', 'donativosController');
 //Route::post('/visitas.salvarVisitas', 'controllerVisita@salvarVisitas')->name('visitas.salvarVisitas');

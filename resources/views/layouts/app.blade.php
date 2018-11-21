@@ -61,12 +61,13 @@
 <header class="header-user-dropdown">
 
 	<div class="header-limiter">
-		<h1><a href="#"><span>SIGEO</span></a></h1>
+		<h1><a href="">Orfanato<span>Primeiro De Maio</span></a></h1>
 
 		<nav>
-			<a href="#">Menu 1</a>
-			<a href="#">Menu 2</a>
-			<a href="#">Menu 3</a>
+			<a href="{{url('doacoes')}}">Doacoes</a>
+			<a href="">Publicacao</a>
+			<a href="#">Funcionarios</a>
+			<a href="{{url('/secretaria/visitas')}}">Visitas</a>
 		</nav>
 
 
@@ -117,20 +118,16 @@
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-					·
-					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
-					·
-					<a href="#">Contact</a>
+					<a href="#">Doacoes</a>
+					.
+					<a href="#">Publicacao</a>
+					.
+					<a href="#">Funcionarios</a>
+					.
+					<a href="#">Visitas</a>
 				</p>
 
-				<p>SIGEO &copy; 2018</p>
+				<p>Primeiro de Maio &copy; 2018</p>
 			</div>
 
 		</footer>

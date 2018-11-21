@@ -38,7 +38,7 @@
                         <input type="text" name="formacao" id="formacao" class="form-control">
                     </div>
 
-                    
+
                     <div class="form-group col-md-4 my-labels">
                         <label>Sector (ocupacao)</label>
                     </div>
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <section class="form-group col-md-8">
-                    <div class="form-group col-md-4 my-labels">
+                    <div class="form-group col-md-4">
                         <label>Nome do usuario</label>
                     </div>
                     <div class="form-group col-md-6">
@@ -195,13 +195,13 @@
                 </section>
 
                 <section class="form-group col-md-4">
-                    <div class="form-group col-md-4 my-labels">
+                    <div class="form-group col-md-4">
                         <label>Palavra-passe</label>
                     </div>
                     <div class="form-group col-md-6">
                         <input type="password" class="form-control" name="palavra-passe" id="palavra-passe">
                     </div>
-                    <div class="form-group col-md-4 my-labels">
+                    <div class="form-group col-md-4">
                         <label>Confirmacao de Palavra-Passe</label>
                     </div>
                     <div class="form-group col-md-6">

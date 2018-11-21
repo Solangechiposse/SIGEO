@@ -7,7 +7,7 @@
 <div id="main" class="container-fluid">
  <h3 class="page-header form-group col-md-4" align="center">Registo de Visitas</h3>
  <h3 class="page-header form-group col-md-8" align="center">Ultimas Visitas</h3>
-  <form method="post" action="{{ url('doacoes') }}" enctype="multipart/form-data">
+  <form method="post" action="{{ url('visitas') }}" enctype="multipart/form-data">
     {{ csrf_field() }}
   <!-- area de campos do form -->
   <div class="row">

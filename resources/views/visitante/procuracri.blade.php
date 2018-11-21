@@ -28,7 +28,7 @@
                         <label>Nome de alcunha</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="date" name="bday" min="1960-01-01" class="form-control">
+                        <input type="text" name="bday" min="1960-01-01" class="form-control">
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
@@ -93,7 +93,7 @@
                         <label>Data do desaparecimento</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="date" class="form-control">
                     </div>
 
                     <div class="form-group col-md-4 my-labels">

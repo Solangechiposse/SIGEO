@@ -69,7 +69,7 @@
      <p style="font-size:18px; font-family: Arial, Helvetica, sans-serif;; margin-left:200px; margin-right:200px; text-align:justify;">
          É Facil! Para oferecer ajuda ao Orfanato Primeiro de Maio, pode fazê-lo por meio de doações que podem ser monetárias ou
          materiais(no prório orfanato).  Lembre-se, qualquer gesto ou ajuda sua pode garantir o sorriso de uma criança.
-         Para fazer doação monetária, <a href="#">clique aqui</a>
+         Para fazer doação monetária, <a href="donativos">clique aqui</a>
     </p>
 
     

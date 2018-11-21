@@ -28,14 +28,22 @@
         <label>Tipo Doador</label>
       </div>
       <div class="form-group col-md-8">
-        <select class="form-control" name="tipoDoador" id="tipoDoador"><option>Singular</option></select>
+        <select class="form-control" name="tipoDoador" id="tipoDoador">
+          <option>Singular</option>
+          <option>Empresa</option>
+        </select>
       </div>
 
       <div class="form-group col-md-4">
         <label>Tipo Doacao</label>
       </div>
       <div class="form-group col-md-8">
-        <select class="form-control" name="tipoDoacao" id="tipoDoacao"><option>Vestuario</option></select>
+        <select class="form-control" name="tipoDoacao" id="tipoDoacao">
+          <option>Vestuario</option>
+          <option>Material Escolar</option>
+          <option>Brinquedos</option>
+          <option>Produtos alimentares</option>
+        </select>
       </div>
 
       <div class="form-group col-md-4">

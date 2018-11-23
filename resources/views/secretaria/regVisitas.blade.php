@@ -5,8 +5,7 @@
 @endsection
 @section('content')
 <div id="main" class="container-fluid">
- <h3 class="page-header form-group col-md-4" align="center">Registo de Visitas</h3>
- <h3 class="page-header form-group col-md-8" align="center">Ultimas Visitas</h3>
+ <h3 class="page-header form-group col-md-12" align="center">Registo de Visitas</h3>
   <form method="post" action="{{ url('regVisitas') }}" enctype="multipart/form-data">
   {{ csrf_field() }}
          <i><h5>{{Session::get('success')}}</h5></i>
@@ -70,7 +69,7 @@
   <hr />
   <div id="actions" class="row">
     <div class="col-md-12">
-    <a href="{{ url('visita') }}" class="btn btn-primary"  align="left">Ver Lista</a>
+    <a href="{{ url('visitas') }}" class="btn btn-primary"  align="left">Ver Lista</a>
       <button type="submit" class="btn btn-primary">Salvar</button>
       <a href="" class="btn btn-default">Cancelar</a>
     </div>

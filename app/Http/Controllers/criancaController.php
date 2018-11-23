@@ -12,7 +12,7 @@ class criancaController extends Controller
     public function index()
   {
     $data['data']=DB::table('criancas')->get();
-     return view('/servico-social/cadCrianca', $data);
+     return view('/servico-social/listaCriancas', $data);
    }
  /**
   * Show the form for creating a new resource.
@@ -39,20 +39,20 @@ class criancaController extends Controller
    $crianca->nivel=$request->get('nivel');
    $crianca->proveniencia=$request->get('proveniencia');
    $crianca->genero=$request->get('genero');
-   
+
    $crianca->nomeResponsavel=$request->get('nomeResponsavel');
    $crianca->bairro=$request->get('bairro');
    $crianca->quarteirao=$request->get('quarteirao');
    $crianca->contactoResp=$request->get('contactoResp');
    $crianca->nCasa=$request->get('nCasa');
    $crianca->rua=$request->get('rua');
-   
-   
+
+
    $crianca->save();
 
       return redirect('cadCrianca')->with('success', 'Cadastro efectuado com sucesso');
  }
 
 
- 
+
 }

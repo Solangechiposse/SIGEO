@@ -12,7 +12,7 @@ class controllerVisita extends Controller
     public function index()
   {
     $data['data']=DB::table('visitas')->get();
-     return view('/visitante/visitas', $data);
+     return view('/secretaria/listaVisitas', $data);
    }
  /**
   * Show the form for creating a new resource.
@@ -28,7 +28,7 @@ class controllerVisita extends Controller
   * Store do cadastro dos visitantes.
   *
   * @return Response
-  
+
   */
 
  public function edit($id)
@@ -44,7 +44,7 @@ class controllerVisita extends Controller
    $data['data']=DB::table('visitas')->get();
    return view('/secretaria/regVisitas', $data);
  }
-  
+
  public function store(Request $request)
  {
    $visita= new \App\visita;

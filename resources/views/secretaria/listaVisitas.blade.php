@@ -22,7 +22,7 @@
   <div id="main" class="container-fluid">
     <div id="actions" class="row">
       <div class="col-md-12">
-        <a href="{{ url('visitas.create') }}"  class="btn btn-primary">Registar Visitas</a>
+        <a href="{{ url('secretaria/visitas') }}"  class="btn btn-primary">Registar Visitas</a>
       </div>
     </div>
    <h3 class="page-header form-group col-md-12" align="center">Visitas Marcadas e Efectuadas</h3>
@@ -44,7 +44,7 @@
             <tbody>
             @foreach($data as $value)
               <tr>
-                  <td >{{ $value->Nome }}</td>
+                  <td >{{ $value->nomeVisitante }}</td>
                   <td >{{ $value->tipoDocumento }}</td>
                   <td >{{ $value->nrDoc }}</td>
                   <td >{{ $value->bday }}</td>

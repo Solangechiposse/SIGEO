@@ -52,6 +52,11 @@ Route::get('/servico-social/cadCrianca', function () {
     return view('servico-social/cadCrianca');
 });
 
+Route::get('/servico-social/listaCiancas', function () {
+    return view('servico-social/listaCriancas');
+});
+
+
 Route::get('/servico-social/regAdopcoes', function () {
     return view('servico-social/regAdopcoes');
 });

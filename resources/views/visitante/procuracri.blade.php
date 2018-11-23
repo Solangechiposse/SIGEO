@@ -12,16 +12,15 @@
 @section('content')
     <div id="main" class="container-fluid">
         <h3 class="page-header form-group col-md-12" style="margin-left:5%;">Dados da crianca desaparecida</h3>
-        {{ csrf_field() }}
          <i><h5>{{Session::get('success')}}</h5></i>
         <form method="POST" action="{{url('procuracri')}}">
-        
+        {{ csrf_field() }}
             <!-- Dados do Funcionario-->
             <div id="top" class="row">
                 <!-- Seccao dos dados-->
-                
+
                 <section class="form-group col-md-6">
-          
+
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome da crianca</label>
                     </div>
@@ -43,7 +42,7 @@
                         <input type="number" name="idade" id="idade" class="form-control" required>
                     </div>
 
-                    
+
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome da escola</label>
                     </div>
@@ -78,8 +77,8 @@
                         <input type="text" class="form-control" name="localDesaparecimento" id="localDesaparecimento" required >
                     </div>
 
-                    
-                   
+
+
                 </section>
 
                 <!-- Seccao da foto-->
@@ -124,7 +123,7 @@
 
 
 
-                    
+
                 </section>
 
             </div>
@@ -193,7 +192,7 @@
                 {{--</form>--}}
             </div>
 
-            
+
 
                 <hr/>
                 <div id="actions" class="row pull-right" style="margin-right: 3%">
@@ -207,7 +206,7 @@
         <br>
         <br><br><br>
 
-        
+
     </div>
 
     <!-- Button trigger modal -->

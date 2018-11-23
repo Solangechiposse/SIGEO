@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layouts.appServSoc')
 
 @section('style')
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -160,8 +160,9 @@
                 <hr/>
                 <div id="actions" class="row pull-right" style="margin-right: 3%">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="" class="btn btn-default">Cancelar</a>
+                      <a href="{{ url('cadCrianca') }}" class="btn btn-primary"  align="left">Ver Lista</a>
+                      <button type="submit" class="btn btn-primary" align="right">Salvar</button>
+                      <a href="" class="btn btn-default" align="right">Cancelar</a>
                     </div>
                 </div>
             </div>

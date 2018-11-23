@@ -70,15 +70,15 @@
           <textarea cols="26" rows="5" class="form-control" placeholder="Deixe ficar o assunto aqui" name="assunto" id="assunto"></textarea>
       </div>
     </section>
-                   
-                   
-               
+
+
+
 
             </div>
                  <div id="actions" class=""  style="margin-left: 76%">
                     <div class="">
                         <button type="submit" class="btn btn-primary">Submeter</button>
-                        
+
                     </div>
                  </div>
             </form>
@@ -87,7 +87,7 @@
 
 
 
-    
+
         <br/><br/><br/><br/>
         <br/><br/><br/><br/>
         <p style="text-align: justify; padding-left: 5px; width: 250px; float:right">

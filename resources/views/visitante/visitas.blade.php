@@ -49,14 +49,18 @@
         <label>Data da Visita</label>
       </div>
       <div class="form-group col-md-8">
-        <input type="date" min="2014-01-01" class="form-control" name="bday" id="bday">
+        <input type="date" min="2014-01-01" class="form-control" name="bday" id="bday" required>
       </div>
 
       <div class="form-group col-md-4">
         <label>Local da Visita</label>
       </div>
       <div class="form-group col-md-8">
-        <select class="form-control" name="local" id="local"><option>Nenhum</option></select>
+        <select class="form-control" name="local" id="local">
+        <option>Nenhum</option>
+        <option>Patio</option>
+        <option>Dormitorio</option>
+        </select>
       </div>
 
       <div class="form-group col-md-4">

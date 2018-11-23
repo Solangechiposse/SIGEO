@@ -31,7 +31,7 @@
 
         <li id="foto015" ><span>School Time</span></li>
         <li id="foto04"><span>Crianca</span></li>
-        <li id="foto08"><span>Facul Time</span></li>
+        <li id="foto017"><span>Facul Time</span></li>
         <li id="foto09"><span>B Group Time</span></li>
 
     </ul>

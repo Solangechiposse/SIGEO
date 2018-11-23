@@ -102,6 +102,17 @@ Route::get('/secretaria/visitas', function () {
     return view('secretaria/regVisitas');
 });
 
+Route::get('/secretaria/listaDoacoes', function () {
+    return view('secretaria/listaVisitas');
+});
+
+
+
+//Testes
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -111,9 +122,15 @@ Route::resource('doacoes', 'DoacoesController');
 Route::get('/doacoes.create', 'DoacoesController@create')->name('doacoes.create');
 Route::get('/doacoes.edit', 'DoacoesController@edit')->name('doacoes.edit');
 Route::get('/doacoes.delete', 'DoacoesController@delete')->name('doacoes.delete');
+
+
+
 Route::resource('publicacao', 'publicacaoController');
+Route::resource('cadCrianca', 'criancaController');
+Route::resource('regVisitas', 'visitasController');
 
 Route::resource('visitas', 'controllerVisita');
 Route::resource('contacto', 'contactoController');
 Route::resource('donativos', 'donativosController');
+Route::resource('procuracri', 'procuraController');
 //Route::post('/visitas.salvarVisitas', 'controllerVisita@salvarVisitas')->name('visitas.salvarVisitas');

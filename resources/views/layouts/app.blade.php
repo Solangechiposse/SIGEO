@@ -68,6 +68,7 @@
 			<a href="">Publicacao</a>
 			<a href="#">Funcionarios</a>
 			<a href="{{url('/secretaria/visitas')}}">Visitas</a>
+			<a href="{{url('/visitante/index')}}">Visitar Pagina</a>
 		</nav>
 
 

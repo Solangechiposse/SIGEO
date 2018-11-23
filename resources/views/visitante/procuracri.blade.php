@@ -12,30 +12,35 @@
 @section('content')
     <div id="main" class="container-fluid">
         <h3 class="page-header form-group col-md-12" style="margin-left:5%;">Dados da crianca desaparecida</h3>
-        <form action="">
+        {{ csrf_field() }}
+         <i><h5>{{Session::get('success')}}</h5></i>
+        <form method="POST" action="{{url('procuracri')}}">
+        
             <!-- Dados do Funcionario-->
             <div id="top" class="row">
                 <!-- Seccao dos dados-->
+                
                 <section class="form-group col-md-6">
+          
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome da crianca</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="nomeFuncionario">
+                        <input type="text" class="form-control" id="nome" name="nome" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome de alcunha</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" name="bday" min="1960-01-01" class="form-control">
+                        <input type="text" name="alcunha" id="alcunha" min="1960-01-01" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Idade</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="number" name="idade" id="idade" class="form-control" required>
                     </div>
 
                     
@@ -43,7 +48,7 @@
                         <label>Nome da escola</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="text" name="escola" id="escola" class="form-control">
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
@@ -52,16 +57,16 @@
                     <div class="form-group col-md-6 ">
 
                         <div class="form-group col-md-2">
-                            <input type="radio" id="Masc" name="genero" class="form-control"/>
+                            <input type="radio" id="Masc" value="M" name="genero" class="form-control" required/>
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-4">
                             <label>Masculino</label>
                         </div>
 
                         <div class="form-group col-md-2">
-                            <input type="radio" id="Fem" name="genero" class="form-control"/>
+                            <input type="radio" id="Fem" value="F" name="genero" class="form-control" required/>
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-4">
                             <label>Femenino</label>
                         </div>
                     </div>
@@ -70,7 +75,7 @@
                         <label>Local do desaparecimento</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="localDesaparecimento" id="localDesaparecimento" required >
                     </div>
 
                     
@@ -86,35 +91,35 @@
                         <label>Foto da crianca</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="file" value="Capturar" class="form-control btn btn-primary"/>
+                        <input type="file" value="Capturar" name="foto" id="foto" class="form-control btn btn-primary"/>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Data do desaparecimento</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="date" class="form-control">
+                        <input type="date" name="data" id="data" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome do pai</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="text" name="pai" id="pai" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome da mae</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control">
+                        <input type="text" name="mae" id="mae" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Caracteristicas da crianca</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <textarea cols="62" rows="5" placeholder="aqui devera ser introduzida informacao sobre o traje da crianca, aparencia..."></textarea>
+                        <textarea name="caracteristicas" id="caracteristicas" class="form-control" rows="5" placeholder="aqui devera ser introduzida informacao sobre o traje da crianca, aparencia..." required></textarea>
                     </div>
 
 
@@ -138,21 +143,21 @@
                             <label>Nome</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="email-do-funcionario">
+                            <input type="text" class="form-control" name="pessoaProcura" id="pessoaProcura" required>
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>Local de trabalho</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control">
+                            <input type="text" name="trabalho" id="trabalho" class="form-control">
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
-                            <label>Grau de parentescoo</label>
+                            <label>Grau de parentesco</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control">
+                            <input type="text" name="parentesco" id="parentesco" class="form-control" required>
                         </div>
                     </section>
 
@@ -163,21 +168,21 @@
                             <label>Bairro</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="contacto-funcionario">
+                            <input type="text" name="bairro" id="bairro" class="form-control" >
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>N.da casa </label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="numero-da-casa">
+                            <input type="text" name="ncCasa" id="nCasa" class="form-control" >
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>Contacto</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="rua-do-funcionario">
+                            <input type="text" class="form-control" name="contacto" id="contacto" required>
                         </div>
 
                     </section>

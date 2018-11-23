@@ -95,14 +95,14 @@ ul#album li#foto04:hover{
     background-size: 200px 200px;
 }
 
-ul#album li#foto08{
-    background: url('/img/imagens/foto08.jpg') no-repeat;
+ul#album li#foto017{
+    background: url('/img/imagens/foto017.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: #ffffff;
 }
 
-ul#album li#foto08:hover{
+ul#album li#foto017:hover{
     background-position: 0px 0px;
     background-size: 200px 200px;
 }

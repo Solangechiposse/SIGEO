@@ -14,38 +14,45 @@
 @section('content')
     <div id="main" class="container-fluid">
         <h3 class="page-header form-group col-md-12" align="center">Ficha de registo de Crianca</h3>
-        <form action="">
+        <i><h5>{{Session::get('success')}}</h5></i>
+        <form method="POST" action="{{url('cadCrianca')}}">
+        {{ csrf_field() }}
             <!-- Dados da Crianca-->
             <div id="top" class="row">
                 <!-- Seccao dos dados-->
                 <section class="form-group col-md-8">
+                <i><h5>{{Session::get('success')}}</h5></i>
                     <div class="form-group col-md-4 my-labels">
                         <label>Nome da Crianca</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" name="nomeCrianca" id="nomeCrianca">
+                        <input type="text" class="form-control" name="nomeCrianca" id="nomeCrianca" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Data de Nascimento</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="date" name="bday" min="2001-01-01" class="form-control">
+                        <input type="date" name="bday" min="2001-01-01" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Data de Entrada</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="date" name="EntradaDay" min="2001-01-01" class="form-control">
+                        <input type="date" name="entradaDay" min="2001-01-01" class="form-control" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
                         <label>Nivel Academico</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <select class="form-control">
+                        <select class="form-control" name="nivel">
                             <option>Nenhum</option>
+                            <option>5.o ano</option>
+                            <option>7.o ano</option>
+                            <option>10.o ano</option>
+                            <option>12.o ano</option>
                         </select>
                     </div>
 
@@ -53,7 +60,7 @@
                         <label>Proveniencia</label>
                     </div>
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" name="proveniencia" id="proveniencia">
+                        <input type="text" class="form-control" name="proveniencia" id="proveniencia" required>
                     </div>
 
                     <div class="form-group col-md-4 my-labels">
@@ -62,14 +69,14 @@
                     <div class="form-group col-md-6 ">
 
                         <div class="form-group col-md-2">
-                            <input type="radio" id="Masc" name="genero" class="form-control"/>
+                            <input type="radio" id="Masc" value="F"  name="genero" class="form-control"/>
                         </div>
                         <div class="form-group col-md-2">
                             <label>Masculino</label>
                         </div>
 
                         <div class="form-group col-md-2">
-                            <input type="radio" id="Fem" name="genero" class="form-control"/>
+                            <input type="radio" id="Fem" value="F" name="genero" class="form-control"/>
                         </div>
                         <div class="form-group col-md-2">
                             <label>Femenino</label>
@@ -101,14 +108,14 @@
                             <label>Nome</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="nomeResponsavel" id="nomeResponsavel">
+                            <input type="text" class="form-control" name="nomeResponsavel" id="nomeResponsavel" required>
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>Bairro</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="bairro" id="bairro">
+                            <input type="text" class="form-control" name="bairro" id="bairro" required>
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
@@ -126,21 +133,21 @@
                             <label>Contacto</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="contactoResponsavel">
+                            <input type="text" class="form-control" id="contactoResp " name="contactoResp" required>
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>N.da casa </label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="casaResponsavel">
+                            <input type="text" class="form-control" id="nCasa" name="nCasa">
                         </div>
 
                         <div class="form-group col-md-4 my-labels">
                             <label>Rua</label>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="ruaResponsavel">
+                            <input type="text" class="form-control" id="rua" name="rua">
                         </div>
 
                     </section>

@@ -70,16 +70,16 @@ Geral :  0033 0000 45351578948 05<br/><br/>
 <i><h5>{{Session::get('success')}}</h5></i>
     <label class="form-group col-md-12">
         <span>O seu nome (obrigatorio)</span><br/>
-        <input type="text" name="nome" id="nome" style="width:560px; height:40px" required/><br/><br/>
+        <input type="text" name="nome" id="nome" class="form-control" style="width:560px; height:40px" required/><br/><br/>
     </label>
     <label class="form-group col-md-12">
         <span>O seu email (obrigatorio)</span><br/>
-        <input type="email" name="email" id="email" placeholder="betolas3@example.com" style="width:560px; height:40px" required/><br/><br/>
+        <input type="email" name="email" id="email" class="form-control" placeholder="betolas3@example.com" style="width:560px; height:40px" required/><br/><br/>
     </label>
 
     <label class="form-group col-md-12">
         <span>Assunto </span><br/>
-        <input type="text" name="assunto" id="assunto" style="width:560px; height:40px"/><br/><br/>
+        <input type="text" name="assunto" id="assunto" class="form-control" style="width:560px; height:40px"/><br/><br/>
     </label>
     <label class="form-group col-md-12" >
         <span>A sua mensagem</span><br/>

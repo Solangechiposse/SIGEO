@@ -66,7 +66,7 @@
 		<nav>
 			<a href="{{url('cadCrianca')}}">Criancas</a>
 			<a href="">Adopcoes</a>
-			<a href="">Procura de Criancas</a>
+			<a href="{{url('procuracri')}}">Procura de Criancas</a>
 			<a href="{{url('/visitante/index')}}">Visitar Pagina</a>
 		</nav>
 

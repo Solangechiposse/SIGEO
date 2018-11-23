@@ -61,6 +61,10 @@ Route::get('/servico-social/regAdopcoes', function () {
     return view('servico-social/regAdopcoes');
 });
 
+Route::get('/servico-social/listaProcura', function () {
+    return view('servico-social/listaProcura');
+});
+
 Route::get('/visitante/index', function () {
     return view('visitante/index');
 });

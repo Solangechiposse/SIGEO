@@ -19,7 +19,7 @@ class procuraController extends Controller
     {
         //
         $procuras=procura::all();
-        return view('visitante.procuracri',compact('procuras'));
+        return view('servico-social/listaProcura',compact('procuras'));
     }
 
     /**
@@ -41,7 +41,7 @@ class procuraController extends Controller
      */
     public function store(Request $request)
     {
-    
+
 
         $procura= new \App\procura;
         $procura->id=$request->get('id');
@@ -62,8 +62,8 @@ class procuraController extends Controller
         $procura->bairro=$request->get('bairro');
         $procura->nCasa=$request->get('nCasa');
         $procura->contacto=$request->get('contacto');
-        
-        
+
+
         $procura->save();
         //procura::create($request->all());
        return redirect('procuracri')->with('success','Pedido submetido com sucesso');
@@ -105,12 +105,12 @@ class procuraController extends Controller
     public function update(Request $request, $id)
     {
         //
-       
-     
+
+
         procura::findOrFail($id)->update($request->all());
         return redirect()->route('procuracri.index')->with('success','Exame editado com sucesso');
     }
-    
+
 
     /**
      * Remove the specified resource from storage.
